@@ -29,6 +29,9 @@ ALLOWED_HOSTS = [
     '8000-raednimer-cidjangotechb-qvbiwfop5qp.ws.codeinstitute-ide.net'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-raednimer-cidjangotechb-qvbiwfop5qp.ws.codeinstitute-ide.net'
+]
 
 # Application definition
 
@@ -121,6 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+IMAGES_URL = 'images/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
