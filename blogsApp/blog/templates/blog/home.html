@@ -1,22 +1,27 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h2>This is Home Page</h2>
-<div>
-<div class="row">
-{% for i in blogs %} <!-- Looping over blogs -->
-<div class="col-md-4">
-    <div class="card">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">{{i.title}}</h5>
-        <p class="card-text">{{i.description|truncatechars:140}}</p>
-        <a href="{% url 'details' i.id %}" class="btn btn-primary">Read More</a>
+<!-- Main container -->
+<div class="mt-4">
+    <!-- Project Title -->
+    <h2 style="font-family: Roboto; font-weight: 700;">Blogify</h2>
+    <div>
+        <div class="row">
+            {% for i in blogs %} <!-- Looping over blogs -->
+            <div class="col-md-4">
+                <div class="card my-3 p-2">
+                    <img src="{{i.image.url}}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{i.title}}</h5>
+                        <p class="card-text">{{i.description|truncatechars:140}}</p>
+                        <p style="color: gray;">{{i.created_at}}</p>
+                        <a href="{% url 'details' i.id %}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
-    </div>
-{% endfor %}
-</div>
 </div>
 
 {% endblock %}
