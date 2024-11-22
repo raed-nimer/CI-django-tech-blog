@@ -1,10 +1,15 @@
 from django.urls import path
 from django.http import HttpResponse
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name="home"), # /
     path('blogs/<str:pk>/', views.blogDetails, name="details"),
+    path('add-blog/', views.add_blog, name="add-blog"),
+    path('blogs/<str:pk>/update', views.update_blog, name="update-blog"),
+    
     path('about/', views.about, name="about"), # route
     path('contact/', views.contact, name="contact") # route for contact page
 ]
