@@ -21,3 +21,12 @@ class Blog(models.Model):
     def __str__(self):
         return str(self.title)
     
+    
+class ContactFormResponse(models.Model):
+    name = models.CharField(max_length=100) # string - required
+    email = models.CharField(max_length=100) # string - required
+    subject = models.CharField(max_length=100) # string - required
+    description = models.TextField(null=True, blank=True) # description is optional 
+    
+    def __str__(self):
+        return str(self.name)
