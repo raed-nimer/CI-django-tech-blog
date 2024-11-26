@@ -1,7 +1,7 @@
 #backend
 from django.shortcuts import render, redirect
 from .models import Blog
-from .forms import BlogForm
+from .forms import BlogForm, ContactFormResponseForm
 # Create your views here.
 # Contains all our functions
 def about(request):
@@ -21,7 +21,11 @@ def home(request):
     #return HttpResponse('Home Page')
 
 def contact(request):
-    return render(request, 'blog/contact.html')
+    form = ContactFormResponseForm() # CREATING A FORM
+    context = {
+            'form': form
+        }
+    return render(request, 'blog/contact.html', context)
 
 # Function responsible for showing the form + adding the blog.
 def add_blog(request):
@@ -43,6 +47,7 @@ def add_blog(request):
         return render(request, 'blog/addBlog.html', context)
 
 def blogDetails(request, pk):
+    
     blog = Blog.objects.get(id=pk)
     context = {
         'blog': blog
