@@ -7,8 +7,34 @@
             <h2>Have Questions? Get in touch!</h2>
             <form method="POST" class="m-4">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="btn btn-primary">Send</button>
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-4">
+                        <div>
+                            <label for="" class="mb-1">Name</label>
+                            {{form.name}}
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4">
+                        <div>
+                            <label for="" class="mb-1">Email</label>
+                            {{form.email}}
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div>
+                            <label for="" class="mb-1">Subject</label>
+                            {{form.subject}}
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div>
+                            <label for="" class="mb-1">Description</label>
+                            {{form.description}}
+                        </div>
+
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3" style="min-width: 160px;">Send Message</button>
             </form>
         </div>
     </div>
