@@ -81,3 +81,7 @@ def update_blog(request, pk):
     
     return render(request, 'blog/editBlog.html', context)
 
+def delete_blog(request, pk):
+    blog = Blog.objects.get(id=pk)
+    blog.delete()
+    return redirect('dashboard')
