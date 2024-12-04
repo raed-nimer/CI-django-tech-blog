@@ -1,5 +1,7 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
+from blog.models import Blog
 from .forms import RegisterUserForm
 # Create your views here.
 def registerView(request):
@@ -29,9 +31,18 @@ def loginView(request):
             login(request, user)
             return redirect('home')
          
-        
     return render(request, 'accounts/login.html')
     
 def logoutView(request):
     logout(request)
     return redirect('home')
+
+# Check to authenticate user
+@login_required(login_url='login')
+def dashboardView(request):
+    # dynamic data
+    blogs = Blog.objects.all() # fetching everything from blogs table
+    context = {
+        'blogs': blogs
+    }
+    return render(request, 'accounts/dashboard.html', context)
