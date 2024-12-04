@@ -62,3 +62,22 @@ def blogDetails(request, pk):
         'blog': blog
     }
     return render(request, 'blog/blogDetails.html', context)
+
+def update_blog(request, pk):
+    blog = Blog.objects.get(id=pk)
+    form = BlogForm(instance=blog)
+    
+    # if update form submitted
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES, instance=blog)
+        if form.is_valid():
+            form.save()
+            return redirect('dashboard')
+    
+    context = {
+        'title': 'Update Blog',
+        'form': form
+    }
+    
+    return render(request, 'blog/editBlog.html', context)
+
