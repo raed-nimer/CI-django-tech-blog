@@ -21,6 +21,15 @@ def home(request):
     #return HttpResponse('Home Page')
 
 def contact(request):
+    if request.method == 'POST':
+        # request.POST => 
+        form = ContactFormResponseForm(request.POST)
+        # Checking if the data is valid or not.
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+        else:
+            print("WE have an error")
     form = ContactFormResponseForm() # CREATING A FORM
     context = {
             'form': form
