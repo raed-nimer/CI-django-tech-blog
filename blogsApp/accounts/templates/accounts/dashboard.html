@@ -1,9 +1,53 @@
 {% extends 'layout.html' %}
 {% block content %}
-<div class="container mt-4">
-    <div class="">
-        <div style="">
-            <h2>Hello, {{user.username}} ({{user.email}})</h2>
+<div class="container mt-4" style="min-height: 75vh;">
+    <div class="my-3">
+        <p>Hello, {{user.username}}</p>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h5>Dashboard</h5>
+        </div>
+        <div class="card-body">
+
+            <div class="d-flex justify-content-end mb-3">
+                <a class="btn btn-outline-primary" href="/add-blog"> <i class="fa fa-plus me-2"></i> Add Blog</a>
+            </div>
+            {% if not blogs %}
+            <div class="text-center">
+                <h4> No blogs found. </h4>
+            </div>
+            {% else %}
+            <table class="table table-striped mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Thumbnail</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for blog in blogs %}
+                    <tr>
+                        <th scope="row">{{blog.id}}</th>
+                        <td>{{blog.title|truncatechars:30}}</td>
+                        <td>
+                            <img src="{{blog.image.url}}" alt="" width="70px">
+                        </td>
+                        <td>
+                            <a class="btn btn-sm btn-success" href="{% url 'details' blog.id %}"><i
+                                    class="fa-solid fa-eye me-2"></i>View</a>
+                            <a href="{% url 'update-blog' blog.id %}" class="btn btn-sm btn-primary"><i
+                                    class="fa-solid fa-pen me-2"></i>Edit</a>
+                            <a href="{% url 'delete-blog' blog.id %}" class="btn btn-sm btn-danger"><i
+                                    class="fa-solid fa-trash me-2"></i>Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
         </div>
     </div>
 </div>
