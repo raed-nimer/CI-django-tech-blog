@@ -47,6 +47,34 @@
                     {% endfor %}
                 </tbody>
             </table>
+            <div class="container">
+                <nav>
+                    <ul class="pagination">
+                        {% if blogs.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page=1">&laquo; First</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ blogs.previous_page_number }}">Previous</a>
+                        </li>
+                        {% endif %}
+
+                        <div class="d-flex justify-content-center align-items-center mx-4">
+                            Page {{ blogs.number }} of {{ blogs.paginator.num_pages }}.
+                        </div>
+
+
+                        {% if blogs.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ blogs.next_page_number }}">Next</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ blogs.paginator.num_pages }}">Last &raquo;</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
             {% endif %}
         </div>
     </div>

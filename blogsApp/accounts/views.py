@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
@@ -41,7 +42,10 @@ def logoutView(request):
 @login_required(login_url='login')
 def dashboardView(request):
     # dynamic data
-    blogs = Blog.objects.all() # fetching everything from blogs table
+    paginator = Paginator(Blog.objects.filter(user=request.user), 2)
+    page_number = request.GET.get('page')
+    blogs = paginator.get_page(page_number)
+    
     context = {
         'blogs': blogs
     }
