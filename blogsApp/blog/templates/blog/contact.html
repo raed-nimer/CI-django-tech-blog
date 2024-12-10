@@ -1,42 +1,57 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<div class="container mt-4">
-    <div class="d-flex justify-content-center">
-        <div style="width: 800px; max-width: 800px;">
-            <h2>Have Questions? Get in touch!</h2>
-            <form method="POST" class="m-4">
-                {% csrf_token %}
-                <div class="row">
-                    <div class="col-12 col-md-6 mt-4">
-                        <div>
-                            <label for="" class="mb-1">Name</label>
-                            {{form.name}}
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 mt-4">
-                        <div>
-                            <label for="" class="mb-1">Email</label>
-                            {{form.email}}
-                        </div>
-                    </div>
-                    <div class="col-12 mt-4">
-                        <div>
-                            <label for="" class="mb-1">Subject</label>
-                            {{form.subject}}
-                        </div>
-                    </div>
-                    <div class="col-12 mt-4">
-                        <div>
-                            <label for="" class="mb-1">Description</label>
-                            {{form.description}}
-                        </div>
-
+<section class="main_section">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title_all text-center">
+                    <h3 class=""><span class="fw-light">Contact</span> Blogify</h3>
+                    <p class="section_subtitle mx-auto text-muted">We'd love to hear from you! Whether you have feedback, questions, or suggestions for future posts, feel free to reach out. <br/>
+                         You can do so by simply filling the form below and we'll get back to you as soon as possible.</p>
+                    <div class="">
+                        <i class=""></i>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3" style="min-width: 160px;">Send Message</button>
-            </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <div style="width: 800px; max-width: 800px;">
+                <h3 class="roboto fw-light">Have Questions? Get in touch!</h3>
+                <form method="POST" class="m-3">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-12 col-md-6 mt-4">
+                            <div>
+                                <label for="" class="mb-1">Name</label>
+                                {{form.name}}
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4">
+                            <div>
+                                <label for="" class="mb-1">Email</label>
+                                {{form.email}}
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div>
+                                <label for="" class="mb-1">Subject</label>
+                                {{form.subject}}
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div>
+                                <label for="" class="mb-1">Description</label>
+                                {{form.description}}
+                            </div>
+
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark mt-3" style="min-width: 160px;">Send
+                        Message</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+</section>
 {% endblock %}
