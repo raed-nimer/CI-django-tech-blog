@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.contrib.auth.models import User
+from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Category(models.Model):
@@ -12,8 +13,10 @@ class Category(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=100) # string - required
-    description = models.TextField(null=True, blank=True) # description is optional
+    # description = models.TextField(null=True, blank=True) # description is optional
+    description = RichTextField(null=True, blank=True)
     image = models.ImageField(upload_to='images/', null=True, blank=True, default='images/default.jpg')
+    user = models.ForeignKey(User, on_delete=models.CASCADE) # User Connection
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)   # category id
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True) # Update 'updated_at' everytime the data updates.
