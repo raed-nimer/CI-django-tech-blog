@@ -85,3 +85,18 @@ def delete_blog(request, pk):
     blog = Blog.objects.get(id=pk)
     blog.delete()
     return redirect('dashboard')
+
+# View to search blogs
+def searchBlogs(request):
+    query = request.GET.get("q")
+    if(query):
+        blogs = Blog.objects.filter(title__icontains=query)
+        # | Q(description_icontains=query)
+    else:
+        blogs = Blog.objects.all()
+    
+    context = {
+        'blogs': blogs
+    }
+    return render(request, 'blog/home.html', context)
+        
