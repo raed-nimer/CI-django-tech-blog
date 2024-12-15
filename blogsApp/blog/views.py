@@ -1,7 +1,9 @@
-#backend
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
+from django.db.models import Q
 from .models import Blog
 from .forms import BlogForm, ContactFormResponseForm
+
 # Create your views here.
 # Contains all our functions
 def about(request):
@@ -36,17 +38,21 @@ def contact(request):
         }
     return render(request, 'blog/contact.html', context)
 
+@login_required(login_url='login')
 # Function responsible for showing the form + adding the blog.
 def add_blog(request):
     if request.method == 'POST':
+        print('User:')
+        print(request.user)
         # request.POST => 
         form = BlogForm(request.POST, request.FILES)
         # Checking if the data is valid or not.
         if form.is_valid():
-            form.save()
+            blog = form.save(commit=False)
+            blog.user = request.user
+            blog.save()
             return redirect('home')
-        else:
-            print("WE have an error")
+        
     
     else:
         form = BlogForm() # CREATING A FORM
@@ -63,6 +69,7 @@ def blogDetails(request, pk):
     }
     return render(request, 'blog/blogDetails.html', context)
 
+@login_required(login_url='login')
 def update_blog(request, pk):
     blog = Blog.objects.get(id=pk)
     form = BlogForm(instance=blog)
@@ -81,6 +88,7 @@ def update_blog(request, pk):
     
     return render(request, 'blog/editBlog.html', context)
 
+@login_required(login_url='login')
 def delete_blog(request, pk):
     blog = Blog.objects.get(id=pk)
     blog.delete()
