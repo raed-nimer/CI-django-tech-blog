@@ -4,9 +4,10 @@
     <div class="d-flex justify-content-center">
         <div style="width: 800px; max-width: 800px;">
             <h2>Create Your Ideas</h2>
-            <form method="POST" class="m-4">
+            <form method="POST" class="m-4" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_p }}
+                {{ form.media }}
                 <button type="submit" class="btn btn-outline-dark">Publish</button>
             </form>
         </div>
