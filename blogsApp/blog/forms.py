@@ -1,5 +1,5 @@
 import django.forms as forms
-from .models import Blog, ContactFormResponse
+from .models import Blog, ContactFormResponse, Comment
 
 class BlogForm(forms.ModelForm):
     class Meta:
@@ -22,4 +22,12 @@ class ContactFormResponseForm(forms.ModelForm):
             'email': forms.TextInput(attrs={'class': 'form-control'}),
             'subject': forms.TextInput(attrs={'class': 'form-control'}),
             'description': forms.Textarea(attrs={'class': 'form-control'})
+        }
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment  
+        fields = ['body']
+        widgets = {
+            'body': forms.Textarea(attrs={'class': 'form-control w-50'}),
         }
