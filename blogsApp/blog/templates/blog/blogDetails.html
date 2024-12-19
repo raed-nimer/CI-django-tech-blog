@@ -10,5 +10,51 @@
         <p style="font-style: italic; color: rgb(95, 95, 95);" class="mt-4">By: {{ blog.user.username }}</p>
     </div>
     <p>{{blog.description|safe}}</p>
+    <br />
+    <hr />
+
+    <div class="mt-4">
+        <!-- Comment section -->
+        <div class="page-width container pt-3">
+            <div>
+                <h3>Comments</h3>
+                <hr />
+                <!-- Add comment -->
+                {% if user.is_authenticated %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Leave a comment</h5>
+                        <hr />
+                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <textarea rows="3" class="form-control bg-light" name="body"
+                                    placeholder="Enter your comment here..." style="resize: none;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-dark btn-sm mt-3 btn-block">Comment</button>
+                        </form>
+                    </div>
+                </div>
+                {% else %}
+                <a href="{% url 'login' %}">Login</a> to comment
+                {% endif %}
+
+                {% if not blog.comments.all%}
+                <p>No Comments yet</p>
+                {% else %}
+                {% for comment in blog.comments.all %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">{{comment.user.username}} - <i
+                                style="font-size: 14px;">{{comment.created_at}}</i></h5>
+                        <p class="card-text">{{comment.body}}</p>
+                        <hr />
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
