@@ -46,7 +46,7 @@ def logoutView(request):
 @login_required(login_url='login')
 def dashboardView(request):
     # dynamic data
-    paginator = Paginator(Blog.objects.filter(user=request.user), 2)
+    paginator = Paginator(Blog.objects.filter(user=request.user), 5)
     page_number = request.GET.get('page')
     blogs = paginator.get_page(page_number)
     
