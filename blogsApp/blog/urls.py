@@ -11,7 +11,8 @@ urlpatterns = [
     path('blogs/<str:pk>/update', views.update_blog, name="update-blog"),
     path('blogs/<str:pk>/delete', views.delete_blog, name="delete-blog"),
     path('about/', views.about, name="about"), # route
-    path('contact/', views.contact, name="contact") # route for contact page
+    path('contact/', views.contact, name="contact"), # route for contact page
+    path('search/', views.searchBlogs, name="search"), # route for searching blogs
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
