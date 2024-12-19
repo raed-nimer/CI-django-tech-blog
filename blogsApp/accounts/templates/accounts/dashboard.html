@@ -4,6 +4,17 @@
     <div class="my-3">
         <p>Hello, {{user.username}}</p>
     </div>
+    <div>
+        {% if messages %}
+        <div>
+            {% for message in messages %}
+            <div class="alert alert-{{message.tags}}">
+                {{message}}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
     <div class="card">
         <div class="card-header">
             <h5>Dashboard</h5>
