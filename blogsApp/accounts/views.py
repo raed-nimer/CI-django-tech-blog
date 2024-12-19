@@ -3,7 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from blog.models import Blog
-from .forms import RegisterUserForm
+from django.contrib import messages
+from .forms import RegisterUserForm, LoginForm
 # Create your views here.
 def registerView(request):
     form = RegisterUserForm()
