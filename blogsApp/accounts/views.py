@@ -31,6 +31,9 @@ def loginView(request):
             # login the user
             login(request, user)
             return redirect('home')
+        else:
+            messages.warning(request, 'Invalid username or password')
+            return redirect('login')
          
     return render(request, 'accounts/login.html')
     
