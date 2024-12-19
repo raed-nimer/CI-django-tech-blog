@@ -24,6 +24,13 @@ class Blog(models.Model):
     def __str__(self):
         return str(self.title)
     
+class Comment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE) # User Connection
+    blog = models.ForeignKey(Blog, related_name="comments", on_delete=models.CASCADE)
+    name = models.CharField(max_length=200)
+    body = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True) # Update 'updated_at' everytime the data updates.
     
 class ContactFormResponse(models.Model):
     name = models.CharField(max_length=100) # string - required
