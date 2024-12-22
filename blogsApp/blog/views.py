@@ -55,7 +55,9 @@ def add_blog(request):
             blog = form.save(commit=False)
             blog.user = request.user
             blog.save()
-            return redirect('home')
+            # Add a Success Message
+            messages.success(request, 'Blog created successfully!')
+            return redirect('dashboard')
         
     
     else:
@@ -83,6 +85,8 @@ def update_blog(request, pk):
         form = BlogForm(request.POST, request.FILES, instance=blog)
         if form.is_valid():
             form.save()
+            # Add a Success Message
+            messages.success(request, 'Blog updated successfully!')
             return redirect('dashboard')
     
     context = {
@@ -96,6 +100,8 @@ def update_blog(request, pk):
 def delete_blog(request, pk):
     blog = Blog.objects.get(id=pk)
     blog.delete()
+    # Add a Success Message
+    messages.success(request, 'Blog deleted successfully!')
     return redirect('dashboard')
 
 # View to search blogs
@@ -111,4 +117,3 @@ def searchBlogs(request):
         'blogs': blogs
     }
     return render(request, 'blog/home.html', context)
-        
