@@ -32,9 +32,10 @@ def contact(request):
         # Checking if the data is valid or not.
         if form.is_valid():
             form.save()
-            return redirect('home')
-        else:
-            print("WE have an error")
+            # Add a Success Message
+            messages.success(request, 'Your contact form has been submitted successfully!')
+            return redirect('contact')
+       
     form = ContactFormResponseForm() # CREATING A FORM
     context = {
             'form': form
