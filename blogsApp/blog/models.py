@@ -13,7 +13,6 @@ class Category(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=100) # string - required
-    # description = models.TextField(null=True, blank=True) # description is optional
     description = RichTextField(null=True, blank=True)
     image = models.ImageField(upload_to='images/', null=True, blank=True, default='images/default.jpg')
     user = models.ForeignKey(User, on_delete=models.CASCADE) # User Connection
