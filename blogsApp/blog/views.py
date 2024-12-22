@@ -67,11 +67,26 @@ def add_blog(request):
         }
         return render(request, 'blog/addBlog.html', context)
 
+# View to show blog details
 def blogDetails(request, pk):
     
+    # if the request is POST
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        # Checking form validity
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.user = request.user
+            comment.blog = Blog.objects.get(id=pk)
+            comment.save()
+            return redirect(reverse('details', kwargs={'pk': pk}))
+            
+            
     blog = Blog.objects.get(id=pk)
+    form = CommentForm()
     context = {
-        'blog': blog
+        'blog': blog,
+        'form': form
     }
     return render(request, 'blog/blogDetails.html', context)
 
