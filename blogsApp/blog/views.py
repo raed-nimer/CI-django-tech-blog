@@ -1,8 +1,11 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.db.models import Q
-from .models import Blog
-from .forms import BlogForm, ContactFormResponseForm
+from django.contrib import messages
+from django.urls import reverse
+from .models import Blog, Comment
+from .forms import BlogForm, ContactFormResponseForm, CommentForm
+
 
 # Create your views here.
 # Contains all our functions
