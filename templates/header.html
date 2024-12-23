@@ -33,18 +33,21 @@
       </form>
       <ul class="navbar-nav ms-md-auto gap-2">
         <li class="nav-item rounded">
-          <a class="nav-link active roboto" aria-current="page" href="/">
+          <a class="nav-link {% if request.path == '/' %}active{% endif %} roboto" aria-current="page" href="/">
             <i class="fa-solid fa-house me-1"></i>Home</a>
         </li>
         <li class="nav-item rounded">
-          <a class="nav-link" href="/about"><i class="bi bi-people-fill me-1"></i>About</a>
+          <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="/about"><i
+              class="bi bi-people-fill me-1"></i>About</a>
         </li>
         <li class="nav-item rounded">
-          <a class="nav-link" href="/contact"><i class="fa-solid fa-phone me-1"></i></i>Contact</a>
+          <a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="/contact"><i
+              class="fa-solid fa-phone me-1"></i></i>Contact</a>
         </li>
         {% if user.is_authenticated %}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link {% if request.path == '/accounts/dashboard/' %}active{% endif %} dropdown-toggle" href="#"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-user me-1"></i> Profile
           </a>
           <ul class="dropdown-menu">
@@ -54,10 +57,12 @@
         </li>
         {% else %}
         <li class="nav-item rounded">
-          <a class="nav-link" href="/accounts/register"><i class="bi bi-telephone-fill me-2"></i>Register</a>
+          <a class="nav-link {% if request.path == '/accounts/register/' %}active{% endif %}"
+            href="/accounts/register"><i class="bi bi-telephone-fill me-2"></i>Register</a>
         </li>
         <li class="nav-item rounded">
-          <a class="nav-link" href="/accounts/login"><i class="bi bi-telephone-fill me-2"></i>Login</a>
+          <a class="nav-link {% if request.path == '/accounts/login/' %}active{% endif %}" href="/accounts/login"><i
+              class="bi bi-telephone-fill me-2"></i>Login</a>
         </li>
         {% endif %}
 
