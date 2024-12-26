@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container mt-4" style="min-height: 75vh;">
     <div class="my-3">
-        <p>Hello, {{user.username}}</p>
+        <p class="fw-light">Hello, {{user.username}}</p>
     </div>
     <div>
         {% if messages %}
@@ -17,7 +17,7 @@
     </div>
     <div class="card">
         <div class="card-header">
-            <h5>Dashboard</h5>
+            <h5 class="fw-light">Dashboard</h5>
         </div>
         <div class="card-body">
 
@@ -26,7 +26,7 @@
             </div>
             {% if not blogs %}
             <div class="text-center">
-                <h4> No blogs found. </h4>
+                <p class="fw-light"> No blogs found. </p>
             </div>
             {% else %}
             <table class="table table-striped mt-4">
