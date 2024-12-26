@@ -16,6 +16,12 @@
 
 ### Authenticated User Goals
 
+8. As an authenticated user, I want to be able to easily create blogs.
+9. As an authenticated user, I want to be able to upload images with blogs.
+10. As an authenticated user, I want to be able to edit my blogs.
+11. As an authenticated user, I want to be able to delete my blogs.
+12. As an authenticated user, I want to be able to comment on any blogs.
+
 ### Admin objectives
 
 ### Languages and Frameworks
