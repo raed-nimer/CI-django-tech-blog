@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container mt-4" style="min-height: 75vh;">
+    <div class="d-flex justify-content-center">
+        <div style="width: 800px; max-width: 800px;">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Delete Blog</h5>
+
+                </div>
+                <div class="card-body">
+                    <p>Are you sure you want to delete <b>{{blog.title}}</b>? This action cannot be undone</p>
+                    <form method="POST" class="m-4" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-outline-danger">Delete</button>
+                        <a href="/accounts/dashboard" class="btn btn-outline-dark">Go back</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

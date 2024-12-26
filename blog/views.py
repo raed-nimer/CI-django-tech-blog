@@ -114,10 +114,15 @@ def update_blog(request, pk):
 @login_required(login_url='login')
 def delete_blog(request, pk):
     blog = Blog.objects.get(id=pk)
-    blog.delete()
-    # Add a Success Message
-    messages.success(request, 'Blog deleted successfully!')
-    return redirect('dashboard')
+    if request.method == 'POST':
+        blog.delete()
+        # Add a Success Message
+        messages.success(request, 'Blog deleted successfully!')
+        return redirect('dashboard')
+    context = {
+        'blog': blog
+    }
+    return render(request, 'blog/deleteBlog.html', context)
 
 # View to search blogs
 def searchBlogs(request):
