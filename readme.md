@@ -24,6 +24,14 @@
 
 ### Admin objectives
 
+13. As an admin, I want to be able to log into the admin panel.
+14. As an admin, I want to be able to easily manage blogs in case of an inappropriate content.
+15. As an admin, I want to be able to provide an educational and interactive app.
+16. As an admin, I want to be able to easily manage comments in case of an inappropriate content.
+17. As an admin, I want to be able to easily manage user accounts.
+
+## Database Schemas
+
 ### Languages and Frameworks
 
 This project was created using the following languages and frameworks:
