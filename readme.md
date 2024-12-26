@@ -5,9 +5,14 @@
 # User Stories
 
 ### First Time Visitor Goals
-1. As a first time user, I want to be able to easily navigate the site.
-2. As a first time user, I want to be able to access the website on any device.
 
+1. As a first time user, I want to be able to easily navigate the web app.
+2. As a first time user, I want to be able to access the app on any device.
+3. As a first time user, I want to be able to easily register for an account.
+4. As a first time user, I want to be able to easily sign in and out of my account.
+5. As a first time user, I want to be able to easily explore the recent blogs.
+6. As a first time user, I want to be able to easily search for blogs.
+7. As a first time user, I want to be able to contact the support.
 
 ### Authenticated User Goals
 
