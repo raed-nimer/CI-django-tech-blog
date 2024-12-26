@@ -48,7 +48,6 @@ ul {
   width: 100px;
 }
 
-
 .about_icon i {
   font-size: 22px;
   height: 65px;
@@ -77,7 +76,7 @@ ul {
 
 .about-section {
   max-width: 80rem;
-  background: linear-gradient(to right, #4e749b  30%, #d5eaff);
+  background: linear-gradient(to right, #4e749b 30%, #d5eaff);
   color: white;
   line-height: 1.5;
   font-family: "Nunito", sans-serif;
@@ -132,5 +131,5 @@ ul {
 }
 
 .bg-blue {
-background-color: #4e749b;
+  background-color: #4e749b;
 }
