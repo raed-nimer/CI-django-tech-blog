@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from blog.models import Blog
 from django.contrib import messages
-from .forms import RegisterUserForm, LoginForm
+from .forms import RegisterUserForm, UpdateUserForm, LoginForm
 # Create your views here.
 def registerView(request):
     form = RegisterUserForm()
@@ -54,3 +54,18 @@ def dashboardView(request):
         'blogs': blogs
     }
     return render(request, 'accounts/dashboard.html', context)
+
+@login_required(login_url='login')
+def profileView(request):
+    form= UpdateUserForm(instance=request.user)
+    if request.method == 'POST':
+        form = UpdateUserForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profile Updated Successfully!')
+            return redirect("profile")
+    context = {
+        'form': form 
+    }
+    return render(request, 'accounts/profile.html', context)
+    
