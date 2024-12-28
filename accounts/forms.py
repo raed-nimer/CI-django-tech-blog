@@ -27,3 +27,19 @@ class LoginForm(AuthenticationForm):
         'invalid_login': "Please enter a correct username and password. Note that both fields may be case-sensitive.",
         'inactive': "This account is inactive.",
     }
+    
+class UpdateUserForm(UserChangeForm):
+    first_name: forms.CharField(max_length=100)
+    last_name: forms.CharField(max_length=100)
+    email: forms.EmailField()
+    
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'username', 'email']
+        widgets = {
+            'first_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'last_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'username': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
+        }
+    
