@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Blogify</a>
@@ -30,10 +29,11 @@
         <li class="nav-item dropdown">
           <a class="nav-link {% if request.path == '/accounts/dashboard/' %}active{% endif %} dropdown-toggle" href="#"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-user me-1"></i> Profile
+            <i class="fa-solid fa-user me-1"></i> {{user.username}}
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/accounts/dashboard">Dashboard</a></li>
+            <li><a class="dropdown-item" href="/accounts/profile">My Profile</a></li>
             <li><a class="dropdown-item" href="/accounts/logout">Logout</a></li>
           </ul>
         </li>
