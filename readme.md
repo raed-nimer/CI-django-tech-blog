@@ -1,4 +1,4 @@
-# Introduction 
+# Introduction
 
 ### Project Goals
 
@@ -42,3 +42,67 @@ This project was created using the following languages and frameworks:
 - [CSS](https://en.wikipedia.org/wiki/CSS) as the style sheet language.
 - [Bootstrap 5](https://getbootstrap.com/) as the CSS framework.
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) to create carousel on index.html.
+
+### Django Packages
+
+| Packages                                   | Description (copied from the web)                                                                          |
+| :----------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| [Django](https://pypi.org/project/Django/) | Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. |
+| [Pillow](https://pypi.org/project/Pillow/) | PIL is the Python Imaging Library.                                                                         |
+
+### Other tools and programs
+
+- [Visual Studio Code.](https://code.visualstudio.com/) Did all of my coding and synchronizing with GitHub on VS Code.
+- [Git](https://git-scm.com/) for version control.
+- [GitHub](https://github.com/) for hosting repositories.
+- [Heroku](https://www.heroku.com/) where the website is deployed.
+- [Grammarly](https://www.grammarly.com/) was used to double-check spelling mistakes.
+
+# Features
+
+### Home page
+
+![Home page](/media/images/readme_images/home-page.jpeg)
+
+### Contact page
+
+![Contact page](/media/images/readme_images/contact-image.jpeg)
+
+### About page
+
+// Add about ss
+// Add a heading for dashboard
+// Attach Dashboard page
+// Add heading for Profile Page
+// Attach Image for profile page
+
+### Login page
+
+![Login page](/media/images/readme_images/login-image.jpeg)
+
+### Register page
+
+![register page](/media/images/readme_images/register-image.jpeg)
+
+## Features to be implemented in future
+
+- Give users an option to reply to a comment
+- Give users an option to follow authors
+- Give users an option to create a custom category
+- Give users an option to search authors
+
+# Testing
+
+## Code Validation
+
+### HTML Validation
+
+### CSS Validtion
+
+### Lighthouse Validation
+
+### JavaScript Validation
+
+### PEP8 Code Institute Python Linter Validation
+
+## Manual testing
