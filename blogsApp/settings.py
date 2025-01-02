@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-@f-_&)+mxtaleml7d8z-zfmcg_&&*&)a-0^o0391bu)!r!fq^0
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-raednimer-cidjangotechb-qvbiwfop5qp.ws.codeinstitute-ide.net'
+    '8000-raednimer-cidjangotechb-qvbiwfop5qp.ws.codeinstitute-ide.net',
+    'blogify-django-app-4de29d2f8f7a.herokuapp.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
