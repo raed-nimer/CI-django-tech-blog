@@ -3,7 +3,7 @@
 <div class="container" style="min-height: 75vh">
     <div class="container mt-4" style="max-width: 720px;">
         <div style="margin-top: 70px;">
-            <div style="">
+            <div>
                 <h2 class="mt-4">Create An Account</h2>
                 <p>Please fill in your details to get started</p>
                 <form method="POST" style="margin: 4rem 1rem;">
@@ -15,7 +15,7 @@
                     {% endif %}
                     <div class="row mt-4">
                         <div class="col-12 col-md-6 mt-3">
-                            <label for="" class="mb-1">First Name</label>
+                            <label for="first_name" class="mb-1">First Name</label>
                             <!-- <input type="text" name="username" class="form-control" id=""> -->
                             {{ form.first_name }}
                             {% if form.first_name.errors %}
@@ -26,7 +26,7 @@
 
                         </div>
                         <div class="col-12 col-md-6 mt-3">
-                            <label for="" class="mb-1">Last Name</label>
+                            <label for="last_name" class="mb-1">Last Name</label>
                             <!-- <input type="email" name="email" id="" class="form-control"> -->
                             {{ form.last_name }}
                             {% if form.last_name.errors %}
@@ -39,7 +39,7 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-12 col-md-6 mt-3">
-                            <label for="" class="mb-1">Username</label>
+                            <label for="username" class="mb-1">Username</label>
                             <!-- <input type="text" name="username" class="form-control" id=""> -->
                             {{ form.username }}
                             {% if form.username.errors %}
@@ -50,7 +50,7 @@
 
                         </div>
                         <div class="col-12 col-md-6 mt-3">
-                            <label for="" class="mb-1">Email</label>
+                            <label for="email" class="mb-1">Email</label>
                             <!-- <input type="email" name="email" id="" class="form-control"> -->
                             {{ form.email }}
                             {% if form.email.errors %}
@@ -63,8 +63,8 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-12 col-md-6 mt-3">
-                            <label for="" class="mb-1">Password</label>
-                            <input type="password" name="password1" id="" class="form-control">
+                            <label for="password" class="mb-1">Password</label>
+                            <input type="password" name="password1" id="password" class="form-control">
                             {% if form.password1.errors %}
                             <span class="text-danger">
                                 {{ form.password1.errors }}
@@ -73,8 +73,8 @@
 
                         </div>
                         <div class="col-12 col-md-6 mt-3">
-                            <label for="" class="mb-1">Confirm Password</label>
-                            <input type="password" name="password2" id="" class="form-control">
+                            <label for="password2" class="mb-1">Confirm Password</label>
+                            <input type="password" name="password2" id="password2" class="form-control">
                             {% if form.password2.errors %}
                             <span class="text-danger">
                                 {{ form.password2.errors }}
