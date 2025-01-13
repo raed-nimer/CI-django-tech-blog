@@ -38,6 +38,79 @@
 
 ## Database Schemas
 
+![ER Diagram](media/images/readme_images/ER-diagram.png)
+
+### User model
+
+- The user model is the default Django user model.
+
+| key          | Field Type    | Validation                  |
+| ------------ | ------------- | --------------------------- |
+| id           | IntegerField  |                             |
+| password     | CharField     | max_length=128              |
+| last_login   | DateTimeField |                             |
+| is_superuser | BooleanField  |                             |
+| username     | CharField     | max_length=150, unique=True |
+| first_name   | CharField     | max_length=150, blank=True  |
+| last_name    | CharField     | max_length=150, blank=True  |
+| email        | EmailField    | max_length=254, unique=True |
+| is_staff     | BooleanField  |                             |
+| is_active    | BooleanField  |                             |
+| date_joined  | DateTimeField |                             |
+
+### Blog model
+
+- The blog model is used to store all the blogs created by users.
+
+| key         | Field Type      | Validation                                        |
+| ----------- | --------------- | ------------------------------------------------- |
+| id          | BigIntegerField | primary_key=True                                  |
+| title       | CharField       | max_length=100                                    |
+| description | RichTextField   |                                                   |
+| image       | ImageField      | upload_to='images/', default='images/default.jpg' |
+| user        | ForeignKey      | User, on_delete=models.CASCADE                    |
+| category    | ForeignKey      | Category, on_delete=models.SET_NULL               |
+| created_at  | DateTimeField   | auto_now_add=True                                 |
+| updated_at  | DateTimeField   | auto_now=True                                     |
+
+### Category model
+
+- The category model is used to store categories of blogs.
+
+| key        | Field Type      | Validation        |
+| ---------- | --------------- | ----------------- |
+| id         | BigIntegerField | primary_key=True  |
+| name       | CharField       | max_length=200    |
+| created_at | DateTimeField   | auto_now_add=True |
+| updated_at | DateTimeField   | auto_now=True     |
+
+### Comment model
+
+- The comment model is used to store all the comments on the blogs.
+
+| key        | Field Type      | Validation                                              |
+| ---------- | --------------- | ------------------------------------------------------- |
+| id         | BigIntegerField | primary_key=True                                        |
+| user       | ForeignKey      | User, on_delete=models.CASCADE                          |
+| blog       | ForeignKey      | Blog, related_name="comments", on_delete=models.CASCADE |
+| name       | CharField       | max_length=200                                          |
+| body       | TextField       |                                                         |
+| created_at | DateTimeField   | auto_now_add=True                                       |
+| updated_at | DateTimeField   | auto_now=True                                           |
+
+### ContactFormResponse model
+
+- The ContactFormResponse model is used to store all contect forms sent to support/developers from users.
+
+| key         | Field Type      | Validation       |
+| ----------- | --------------- | ---------------- |
+| id          | BigIntegerField | primary_key=True |
+| name        | CharField       | max_length=100   |
+| email       | CharField       | max_length=100   |
+| subject     | CharField       | max_length=100   |
+| description | TextField       |                  |
+
+
 ### Languages and Frameworks
 
 This project was created using the following languages and frameworks:
