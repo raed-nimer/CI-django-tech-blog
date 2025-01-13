@@ -147,10 +147,15 @@ This project was created using the following languages and frameworks:
 
 ### Django Packages
 
-| Packages                                   | Description (copied from the web)                                                                          |
-| :----------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [Django](https://pypi.org/project/Django/) | Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. |
-| [Pillow](https://pypi.org/project/Pillow/) | PIL is the Python Imaging Library.                                                                         |
+| Packages                                                     | Description (copied from the web)                                                                                                                                                                                                                                              |
+| :----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Django](https://pypi.org/project/Django/)                   | Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.                                                                                                                                                                     |
+| [Pillow](https://pypi.org/project/Pillow/)                   | PIL is the Python Imaging Library.                                                                                                                                                                                                                                             |
+| [whitenoise](https://pypi.org/project/whitenoise/)           | Radically simplified static file serving for Python web apps                                                                                                                                                                                                                   |
+| [django-ckeditor](https://pypi.org/project/django-ckeditor/) | Django admin CKEditor integration.                                                                                                                                                                                                                                             |
+| [gunicorn](https://pypi.org/project/gunicorn/)               | Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX. It’s a pre-fork worker model ported from Ruby’s Unicorn project. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resource usage, and fairly speedy. |
+| [psycopg2](https://pypi.org/project/psycopg2/)               | Psycopg is the most popular PostgreSQL database adapter for the Python programming language.                                                                                                                                                                                   |
+| [dj-database-url](https://pypi.org/project/dj-database-url/) | Use Database URLs in your Django Application.                                                                                                                                                                                                                                  |
 
 ### Other tools and programs
 
