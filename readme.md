@@ -164,6 +164,8 @@ This project was created using the following languages and frameworks:
 - [GitHub](https://github.com/) for hosting repositories.
 - [Heroku](https://www.heroku.com/) where the website is deployed.
 - [Grammarly](https://www.grammarly.com/) was used to double-check spelling mistakes.
+- [Font Awesome](https://fontawesome.com/) was used for icons
+- [Lucid](https://lucid.co/) was used to create database ERD
 
 # Features
 
