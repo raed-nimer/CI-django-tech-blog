@@ -110,6 +110,29 @@
 | subject     | CharField       | max_length=100   |
 | description | TextField       |                  |
 
+## Agile development
+
+Link to my [GitHub Agile Project](https://github.com/users/raed-nimer/projects/1)
+
+I found this methodology a bit tricky when I started it, but eventually got a hang of it.
+I found out about including agile development using kanban board after completing more than half of the project, so I decided to use the [Kanban](<https://en.wikipedia.org/wiki/Kanban_(development)>) and [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) prioritization method.
+
+As a individual developer working on this project, I found creating "Epics" and "user stories" a bit time consuming.
+However, I can see the benefits of using this methodology when working as a team. As of now, I will continue to use this method for all of my future projects and keep exploring more about it. I will also start looking into Jira, which is considered a good agile tool as well.
+
+I created four columns: Todo, In Progress, Testing and Done.
+I also created 9 labels:
+
+- For MoSCoW prioritization: Must-have, Should-have, Could-have, Won't-have
+- 5 helper labels: bug, Done, Epic, enhancement, User-story
+
+I created 6 Epics divided into 13 user stories. Epics and user stories are connected with the # link on the title and in the description.
+
+| Example    | Image                                                |
+| ---------- | ---------------------------------------------------- |
+| Epic       | ![Epic](media/images/readme_images/Epic-img.png)     |
+| User story | ![User story](media/images/readme_images/US-img.png) |
+
 
 ### Languages and Frameworks
 
