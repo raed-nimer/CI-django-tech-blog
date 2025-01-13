@@ -2,6 +2,12 @@
 
 ### Project Goals
 
+- To create a visually appealing website
+- To create a website that is easy to navigate
+- To create a website that is responsive across all devices
+- To create a website that is interactive
+- To create a website that is fun and easy to use
+
 # User Stories
 
 ### First Time Visitor Goals
