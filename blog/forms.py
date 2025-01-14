@@ -1,6 +1,7 @@
 import django.forms as forms
 from .models import Blog, ContactFormResponse, Comment
 
+
 class BlogForm(forms.ModelForm):
     class Meta:
         model = Blog
@@ -11,8 +12,8 @@ class BlogForm(forms.ModelForm):
             'image': forms.FileInput(attrs={'class': 'form-control'}),
             'category': forms.Select(attrs={'class': 'form-control'})
         }
-        
-        
+
+
 class ContactFormResponseForm(forms.ModelForm):
     class Meta:
         model = ContactFormResponse
@@ -24,9 +25,10 @@ class ContactFormResponseForm(forms.ModelForm):
             'description': forms.Textarea(attrs={'class': 'form-control'})
         }
 
+
 class CommentForm(forms.ModelForm):
     class Meta:
-        model = Comment  
+        model = Comment
         fields = ['body']
         widgets = {
             'body': forms.Textarea(attrs={'class': 'form-control w-50'}),
