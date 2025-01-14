@@ -68,7 +68,7 @@ ROOT_URLCONF = 'blogsApp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ 
+        'DIRS': [
             BASE_DIR / 'templates'
           ],
         'APP_DIRS': True,
@@ -96,15 +96,15 @@ WSGI_APPLICATION = 'blogsApp.wsgi.application'
 #     }
 # }
 
-if 'DATABASE_URL' not in os.environ: 
+if 'DATABASE_URL' not in os.environ:
     raise RuntimeError("The DATABASE_URL environment variable is required but not set.")
 
 DATABASES = {
              'default': dj_database_url.parse(
-                os.environ.get('DATABASE_URL'), 
-                conn_max_age=600, # Optional: Keeps the connection alive for 600 seconds 
-                ssl_require=True # Optional: Forces SSL connection 
-                ) 
+                os.environ.get('DATABASE_URL'),
+                conn_max_age=600,
+                ssl_require=True
+                )
              }
 
 # Password validation
