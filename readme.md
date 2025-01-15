@@ -141,6 +141,7 @@ I created 6 Epics divided into 13 user stories. Epics and user stories are conne
 | Epic       | ![Epic](media/images/readme_images/Epic-img.png)     |
 | User story | ![User story](media/images/readme_images/US-img.png) |
 
+## Tools and technologies used
 
 ### Languages and Frameworks
 
