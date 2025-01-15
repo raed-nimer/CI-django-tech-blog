@@ -285,6 +285,10 @@ This project was created using the following languages and frameworks:
 
 ### JavaScript Validation
 
+- No errors were found when passing code through official [JSHint](https://jshint.com/) validator.
+
+![JavaScript validation](media/images/readme_images/JS-validator-image.png)
+
 ### PEP8 Code Institute Python Linter Validation
 
 ## Manual testing
