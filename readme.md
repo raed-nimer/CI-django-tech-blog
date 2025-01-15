@@ -327,6 +327,15 @@ This project was created using the following languages and frameworks:
 
 
 ## Manual testing
+
+
+### Areas of improvements
+
+- Image names to be stored as timestamps to be unique.
+- Users to be able to search by category.
+- Report a blog.
+
+
 # Deployment
 
 ### Deploy with Heroku
