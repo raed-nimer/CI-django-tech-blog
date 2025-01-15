@@ -291,4 +291,39 @@ This project was created using the following languages and frameworks:
 
 ### PEP8 Code Institute Python Linter Validation
 
+- All python files were tested and passed through the [Code Institute PEP8]() linter validator.
+
+
+#### BlogsApp project app
+
+| File        | Result                                                          |
+| ----------- | --------------------------------------------------------------- |
+| settings.py | ![PEP8 Linter](media/images/readme_images/PEP8-linter-test.png) |
+| urls.py     | All clear, no errors found                                      |
+
+
+#### Blog app
+
+| File      | Result                     |
+| --------- | -------------------------- |
+| admin.py  | All clear, no errors found |
+| apps.py   | All clear, no errors found |
+| forms.py  | All clear, no errors found |
+| models.py | All clear, no errors found |
+| urls.py   | All clear, no errors found |
+| views.py  | All clear, no errors found |
+
+
+#### Accounts app
+
+| File      | Result                     |
+| --------- | -------------------------- |
+| admin.py  | All clear, no errors found |
+| apps.py   | All clear, no errors found |
+| forms.py  | All clear, no errors found |
+| models.py | All clear, no errors found |
+| urls.py   | All clear, no errors found |
+| views.py  | All clear, no errors found |
+
+
 ## Manual testing
