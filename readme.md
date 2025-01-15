@@ -275,6 +275,11 @@ This project was created using the following languages and frameworks:
 | Login page    | ![Login-validation](media/images/readme_images/loginpage-validation.png)        |
 | Dasboard page | ![Dashboard-validation](media/images/readme_images/dashboard-validation.png)    |
 
+### CSS Validation
+
+- No errors were found when passing the through the official [jigsaw](https://jigsaw.w3.org/css-validator/) validator.
+
+![CSS validation](media/images/readme_images/css-validation-image.png)
 
 ### Lighthouse Validation
 
