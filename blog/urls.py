@@ -15,8 +15,5 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),  # route for contact page
     path('search/', views.searchBlogs, name="search"),  # search blogs
 ]
-if settings.DEBUG:
-    urlpatterns += static(
-        settings.MEDIA_URL,
-        document_root=settings.MEDIA_ROOT
-    )
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
