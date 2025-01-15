@@ -179,27 +179,76 @@ This project was created using the following languages and frameworks:
 
 ### Home page
 
+- The home page is the first page that appears when a user visits the website.
+
+- The page contains a welcome message, a hero image and recently added blogs.
+
 ![Home page](/media/images/readme_images/home-page.jpeg)
 
 ### Contact page
+
+- Contact page can be used to contact support/developer
+
+- The contact page consists of four inputs to fill out: Name, Email, Subject, and Description.
+
+- If a user has any questions or concerns, they can go to the contact page, fill in their name, the email they wish to be contacted at, the subject of the matter, and then describe the matter in more detail in the description section for the support team.
 
 ![Contact page](/media/images/readme_images/contact-image.jpeg)
 
 ### About page
 
-// Add about ss
-// Add a heading for dashboard
-// Attach Dashboard page
-// Add heading for Profile Page
-// Attach Image for profile page
+- The about page provides an overview of the website’s purpose and mission.
+
+- It includes a brief history and summary of the core values.
+
+- Visitors can learn more about the platform's goals and what sets it apart.
+
+![About page](/media/images/readme_images/about-view.jpeg)
+
+### Dashboard page
+
+- The dashboard lets you create, view, edit, or delete your blogs.
+  It provides an easy-to-use interface for managing your blogs, utilizing pagination.
+
+![Dashboard page](media/images/readme_images/dashboard-view.jpeg)
+
+### Profile page
+
+- The profile page allows you to update your personal information, including your name, last name, username, and email.
+
+- It provides a simple interface for managing your account details, ensuring your profile stays up-to-date.
+
+![Profile page](media/images/readme_images/profile-view.jpeg)
 
 ### Login page
+
+- Login page is where a registered user can login to their account.
+
+- It has a form with the username and password fields.
 
 ![Login page](/media/images/readme_images/login-image.jpeg)
 
 ### Register page
 
+- Register page is where a first time user can create their account.
+
+- It has a form with the first name, last name, username, email, password and confirm password.
+
 ![register page](/media/images/readme_images/register-image.jpeg)
+
+### Delete blog confirmation page
+
+- Delete blog confirmation page is where the user can confirm if they want to delete the blog.
+
+![delete blog confirmation page](/media/images/readme_images/delete-img.jpeg)
+
+### Add blog page
+
+- Add blog page is where the user can create a new blog.
+
+- It has form with title, description, image and category fields.
+
+![Add blog page](/media/images/readme_images/addblog-img.jpeg)
 
 ## Features to be implemented in future
 
