@@ -263,7 +263,18 @@ This project was created using the following languages and frameworks:
 
 ### HTML Validation
 
-### CSS Validtion
+- All pages were checked and passed through the official [W3C](https://validator.w3.org/nu/) validator.
+- Validation was done on live app deployed on heroku.
+
+| Page          | Validation image                                                                |
+| ------------- | ------------------------------------------------------------------------------- |
+| Home page     | ![Homepage-validation](media/images/readme_images/Homepage-html-validation.png) |
+| About page    | ![About-validation](media/images/readme_images/aboutpage-html-validation.png)   |
+| Contact page  | ![Contact-validation](media/images/readme_images/contactpage-validation.png)    |
+| Register page | ![Register-validation](media/images/readme_images/registerpage-validation.png)  |
+| Login page    | ![Login-validation](media/images/readme_images/loginpage-validation.png)        |
+| Dasboard page | ![Dashboard-validation](media/images/readme_images/dashboard-validation.png)    |
+
 
 ### Lighthouse Validation
 
