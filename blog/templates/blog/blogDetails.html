@@ -36,6 +36,8 @@
                         </form>
                     </div>
                 </div>
+
+                <!-- If user not logged in -->
                 {% else %}
                 <a href="{% url 'login' %}">Login</a> to comment
                 {% endif %}

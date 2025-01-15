@@ -2,7 +2,7 @@ import django.forms as forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, UserChangeForm
 
-
+# Create user form
 class RegisterUserForm(UserCreationForm):
     email: forms.EmailField()
     first_name: forms.CharField(max_length=100)
@@ -21,7 +21,7 @@ class RegisterUserForm(UserCreationForm):
             'password2': forms.PasswordInput(attrs={'class': 'form-control'})
         }
 
-
+# Login form
 class LoginForm(AuthenticationForm):
     username = forms.CharField(widget=forms.TextInput(
         attrs={'class': 'form-control'}))
@@ -35,7 +35,7 @@ class LoginForm(AuthenticationForm):
         'inactive': "This account is inactive.",
     }
 
-
+# Profile form
 class UpdateUserForm(UserChangeForm):
     first_name: forms.CharField(max_length=100)
     last_name: forms.CharField(max_length=100)

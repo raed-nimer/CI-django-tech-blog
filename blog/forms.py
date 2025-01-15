@@ -1,7 +1,7 @@
 import django.forms as forms
 from .models import Blog, ContactFormResponse, Comment
 
-
+# Blogs form
 class BlogForm(forms.ModelForm):
     class Meta:
         model = Blog
@@ -13,7 +13,7 @@ class BlogForm(forms.ModelForm):
             'category': forms.Select(attrs={'class': 'form-control'})
         }
 
-
+# Contact page form
 class ContactFormResponseForm(forms.ModelForm):
     class Meta:
         model = ContactFormResponse
@@ -25,7 +25,7 @@ class ContactFormResponseForm(forms.ModelForm):
             'description': forms.Textarea(attrs={'class': 'form-control'})
         }
 
-
+# Comments form
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment

@@ -22,7 +22,7 @@ def registerView(request):
     }
     return render(request, 'accounts/register.html', context)
 
-
+# User login view
 def loginView(request):
     # On Logging in
     if request.method == 'POST':
@@ -41,7 +41,7 @@ def loginView(request):
 
     return render(request, 'accounts/login.html')
 
-
+# Logout user view
 def logoutView(request):
     logout(request)
     return redirect('home')
@@ -60,7 +60,7 @@ def dashboardView(request):
     }
     return render(request, 'accounts/dashboard.html', context)
 
-
+# User profile view
 @login_required(login_url='login')
 def profileView(request):
     form = UpdateUserForm(instance=request.user)
