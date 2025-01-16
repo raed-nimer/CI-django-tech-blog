@@ -8,6 +8,10 @@ Beyond its technical features, Blogify fosters a vibrant community of tech profe
 
 More than just a blogging platform, Blogify is a comprehensive solution for transforming ideas into impactful content. Whether you’re sharing personal experiences, professional expertise, or exploring the latest tech trends, Blogify equips you with the tools to make your voice heard in the digital world. Join Blogify today and become a part of a community that’s shaping the future of technology.
 
+![responsive view](media/images/readme_images/app-responsive-view.png)
+
+Access the live app [here](https://blogify-django-app-4de29d2f8f7a.herokuapp.com/)
+
 ### Project Goals
 
 - To create a visually appealing website
