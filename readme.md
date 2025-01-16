@@ -294,6 +294,33 @@ This project was created using the following languages and frameworks:
 
 ### Lighthouse Validation
 
+- Home page lighthouse validation.
+
+![Home page lighthouse validation](media/images/readme_images/homepage-LH-view.png)
+
+- About page lighthouse validation.
+
+![About page lighthouse validation](media/images/readme_images/aboutpage-LH-view.png)
+
+- Contact page lighthouse validation.
+
+![Contact page lighthouse validation](media/images/readme_images/contactpage-LH-view.png)
+
+- Dashboard lighthouse validation.
+
+![Dashboard lighthouse validation](media/images/readme_images/dashboard-LH-view.png)
+
+- Profile page lighthouse validation.
+  ![Profile page lighthouse validation](media/images/readme_images/profilepage-LH-view.png)
+
+- Register page lighthouse validation.
+
+![Register page lighthouse validation](media/images/readme_images/registerpage-LH-view.png)
+
+- login page lighthouse validation.
+
+![login page lighthouse validation](media/images/readme_images/loginpage-LH-view.png)
+
 ### JavaScript Validation
 
 - No errors were found when passing code through official [JSHint](https://jshint.com/) validator.
