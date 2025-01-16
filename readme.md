@@ -378,20 +378,20 @@ This project was created using the following languages and frameworks:
 
 ### Deploy with Heroku
 
-1. Login to [Heroku](https://www.heroku.com/) if you already have an account or [sign up](https://signup.heroku.com/) if you don't. 
+1. Login to [Heroku](https://www.heroku.com/) if you already have an account or [sign up](https://signup.heroku.com/) if you don't.
 2. Click on the "New" button on the top right of the home page and select "Create new App" from the drop-down menu.
-3. In the "App name" field enter the name of your app. This name has to be unique. 
-    - Heroku displays a green tick if your app name is available.
+3. In the "App name" field enter the name of your app. This name has to be unique.
+   - Heroku displays a green tick if your app name is available.
 4. In the "Choose a region" field choose either the United States or Europe based on your location.
 5. Click the "Create app" button.
-6. Next page, top centre of the screen, select the "Settings" tab. 
+6. Next page, top centre of the screen, select the "Settings" tab.
 7. In the "Config Vars" section, click on the "Reveal config Vars" button.
-8. Add environment variables from the local env.py file to the "Config Vars" section: 
-    - SECRET_KEY - Django secret key.
-    - DATABASE_USER - Amazon RDS database user.
-    - DATABASE_HOST - Amazon RDS database host.
-    - DATABASE_NAME - Amazon RDS database name.
-    - DATABASE_PASS - Amazon RDS database password.
+8. Add environment variables from the local env.py file to the "Config Vars" section:
+   - SECRET_KEY - Django secret key.
+   - DATABASE_USER - Amazon RDS database user.
+   - DATABASE_HOST - Amazon RDS database host.
+   - DATABASE_NAME - Amazon RDS database name.
+   - DATABASE_PASS - Amazon RDS database password.
 9. Copy and paste these variables into the KEY field and their values into the VALUE field.
 10. Select "Deploy" tab from the top of the screen.
 11. In the "Deployment method" section select "GitHub".
