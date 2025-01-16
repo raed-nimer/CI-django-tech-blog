@@ -145,6 +145,12 @@ I created 6 Epics divided into 13 user stories. Epics and user stories are conne
 | Epic       | ![Epic](media/images/readme_images/Epic-img.png)     |
 | User story | ![User story](media/images/readme_images/US-img.png) |
 
+My Kanban board:
+
+| At the start                                                | Current status                                                    |
+| ----------------------------------------------------------- | ----------------------------------------------------------------- |
+| ![Kanban board](media/images/readme_images/kanban-img1.png) | ![Kanban board](media/images/readme_images/kanban-done-image.png) |
+
 ## Tools and technologies used
 
 ### Languages and Frameworks
