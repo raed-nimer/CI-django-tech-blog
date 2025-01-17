@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from cloudinary.models import CloudinaryField
 # Create your models here.
 
 # Category model
@@ -16,11 +17,7 @@ class Category(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=100)  # string - required
     description = RichTextField(null=True, blank=True)
-    image = models.ImageField(
-        upload_to='images/',
-        null=True, blank=True,
-        default='images/default.jpg'
-    )
+    image = CloudinaryField('image', default='images/default.jpg')
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # User Connection
     category = models.ForeignKey(
         Category,

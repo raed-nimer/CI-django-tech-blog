@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -25,9 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-@f-_&)+mxtaleml7d8z-zfmcg_&&*&)a-0^o0391bu)!r!fq^0'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-
-DEBUG = True
+# SECURITY WARNING: don't run with debug turned on in production
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-raednimer-cidjangotechb-qvbiwfop5qp.ws.codeinstitute-ide.net',
@@ -47,8 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'blog.apps.BlogConfig',
     'accounts.apps.AccountsConfig',
+    'cloudinary',
     'ckeditor'
 ]
 
