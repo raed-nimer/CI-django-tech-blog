@@ -318,6 +318,7 @@ This project was created using the following languages and frameworks:
 ![Dashboard lighthouse validation](media/images/readme_images/dashboard-LH-view.png)
 
 - Profile page lighthouse validation.
+
   ![Profile page lighthouse validation](media/images/readme_images/profilepage-LH-view.png)
 
 - Register page lighthouse validation.
@@ -338,14 +339,12 @@ This project was created using the following languages and frameworks:
 
 - All python files were tested and passed through the [Code Institute PEP8]() linter validator.
 
-
 #### BlogsApp project app
 
 | File        | Result                                                          |
 | ----------- | --------------------------------------------------------------- |
 | settings.py | ![PEP8 Linter](media/images/readme_images/PEP8-linter-test.png) |
 | urls.py     | All clear, no errors found                                      |
-
 
 #### Blog app
 
@@ -358,7 +357,6 @@ This project was created using the following languages and frameworks:
 | urls.py   | All clear, no errors found |
 | views.py  | All clear, no errors found |
 
-
 #### Accounts app
 
 | File      | Result                     |
@@ -370,16 +368,13 @@ This project was created using the following languages and frameworks:
 | urls.py   | All clear, no errors found |
 | views.py  | All clear, no errors found |
 
-
 ## Manual testing
-
 
 ### Areas of improvements
 
-- Image names to be stored as timestamps to be unique.
+- Forgot password functionality.
 - Users to be able to search by category.
 - Report a blog.
-
 
 # Deployment
 
@@ -406,3 +401,16 @@ This project was created using the following languages and frameworks:
     2. Scroll to the bottom of that page. Click on the "Deploy Branch" button to deploy.
     3. You should also see an option to enable automatic deployment. If you enable this, every time you push to GitHub, Heroku will automatically deploy the app.
 12. Once the build starts, you should be able to see the logs at the bottom of the page. When successfully finished building the app, you should see the link to your app.
+
+# Content 
+
+- Blogs are AI generated.
+- Most of the images were taken from [unsplash](https://unsplash.com/).
+
+
+# Credits
+
+- The web app is inpired by [medium](https://medium.com/)
+- [Code Institute](https://codeinstitute.net/) content and articles were really helpful in making this project a success.
+- John Elder tutorials ([codemy.com](https://www.youtube.com/@Codemycom)) on django have helped in developing complex logic.
+- [Slack community](https://slack.com/intl/en-ie/) for their support.
