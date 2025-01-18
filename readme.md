@@ -10,6 +10,10 @@ More than just a blogging platform, Blogify is a comprehensive solution for tran
 
 ![responsive view](media/images/readme_images/app-responsive-view.png)
 
+This website has been created as a learning exersise for [Code Institute](https://codeinstitute.net/) fourth portfolio project.
+
+Access the admin panel [here](https://blogify-django-app-4de29d2f8f7a.herokuapp.com/admin/)
+
 Access the live app [here](https://blogify-django-app-4de29d2f8f7a.herokuapp.com/)
 
 ### Project Goals
