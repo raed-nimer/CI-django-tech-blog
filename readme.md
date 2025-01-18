@@ -390,10 +390,11 @@ This project was created using the following languages and frameworks:
 7. In the "Config Vars" section, click on the "Reveal config Vars" button.
 8. Add environment variables from the local env.py file to the "Config Vars" section:
    - SECRET_KEY - Django secret key.
-   - DATABASE_USER - Amazon RDS database user.
-   - DATABASE_HOST - Amazon RDS database host.
-   - DATABASE_NAME - Amazon RDS database name.
-   - DATABASE_PASS - Amazon RDS database password.
+   - DATABASE_USER - Database user.
+   - DATABASE_HOST - Database host.
+   - DATABASE_NAME - Database name.
+   - DATABASE_PASS - Database password.
+   - CLOUDINARY_URL - Cloudinary API url
 9. Copy and paste these variables into the KEY field and their values into the VALUE field.
 10. Select "Deploy" tab from the top of the screen.
 11. In the "Deployment method" section select "GitHub".
