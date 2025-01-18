@@ -47,7 +47,7 @@ def contact(request):
 
 @login_required(login_url='login')
 # Function responsible for showing the form + adding the blog.
-def add_blog(request):
+def addBlog(request):
     if request.method == 'POST':
         # request.POST =>
         form = BlogForm(request.POST, request.FILES)
@@ -92,7 +92,7 @@ def blogDetails(request, pk):
 
 
 @login_required(login_url='login')
-def update_blog(request, pk):
+def updateBlog(request, pk):
     blog = Blog.objects.get(id=pk)
     form = BlogForm(instance=blog)
 
@@ -114,7 +114,7 @@ def update_blog(request, pk):
 
 
 @login_required(login_url='login')
-def delete_blog(request, pk):
+def deleteBlog(request, pk):
     blog = Blog.objects.get(id=pk)
     if request.method == 'POST':
         blog.delete()
