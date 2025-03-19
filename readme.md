@@ -8,7 +8,7 @@ Beyond its technical features, Blogify fosters a vibrant community of tech profe
 
 More than just a blogging platform, Blogify is a comprehensive solution for transforming ideas into impactful content. Whether you’re sharing personal experiences, professional expertise, or exploring the latest tech trends, Blogify equips you with the tools to make your voice heard in the digital world. Join Blogify today and become a part of a community that’s shaping the future of technology.
 
-![responsive view](media/images/readme_images/app-responsive-view.png)
+![responsive view](staticfiles/readme-images/app-responsive-view.png)
 
 This website has been created as a learning exersise for [Code Institute](https://codeinstitute.net/) fourth portfolio project.
 
@@ -54,7 +54,7 @@ Access the live app [here](https://blogify-django-app-4de29d2f8f7a.herokuapp.com
 
 ## Database Schemas
 
-![ER Diagram](media/images/readme_images/ER-diagram.png)
+![ER Diagram](staticfiles/readme-images/ER-diagram.png)
 
 ### User model
 
@@ -146,14 +146,14 @@ I created 6 Epics divided into 13 user stories. Epics and user stories are conne
 
 | Example    | Image                                                |
 | ---------- | ---------------------------------------------------- |
-| Epic       | ![Epic](media/images/readme_images/Epic-img.png)     |
-| User story | ![User story](media/images/readme_images/US-img.png) |
+| Epic       | ![Epic](staticfiles/readme-images/Epic-img.png)     |
+| User story | ![User story](staticfiles/readme-images/US-img.png) |
 
 My Kanban board:
 
 | At the start                                                | Current status                                                    |
 | ----------------------------------------------------------- | ----------------------------------------------------------------- |
-| ![Kanban board](media/images/readme_images/kanban-img1.png) | ![Kanban board](media/images/readme_images/kanban-done-image.png) |
+| ![Kanban board](staticfiles/readme-images/kanban-img1.png) | ![Kanban board](staticfiles/readme-images/kanban-done-image.png) |
 
 ## Tools and technologies used
 
@@ -201,7 +201,7 @@ This project was created using the following languages and frameworks:
 
 - The page contains a welcome message, a hero image and recently added blogs.
 
-![Home page](/media/images/readme_images/home-page.jpeg)
+![Home page](staticfiles/readme-images/home-page.jpeg)
 
 ### Contact page
 
@@ -211,7 +211,7 @@ This project was created using the following languages and frameworks:
 
 - If a user has any questions or concerns, they can go to the contact page, fill in their name, the email they wish to be contacted at, the subject of the matter, and then describe the matter in more detail in the description section for the support team.
 
-![Contact page](/media/images/readme_images/contact-image.jpeg)
+![Contact page](staticfiles/readme-images/contact-image.jpeg)
 
 ### About page
 
@@ -221,14 +221,14 @@ This project was created using the following languages and frameworks:
 
 - Visitors can learn more about the platform's goals and what sets it apart.
 
-![About page](/media/images/readme_images/about-view.jpeg)
+![About page](staticfiles/readme-images/about-view.jpeg)
 
 ### Dashboard page
 
 - The dashboard lets you create, view, edit, or delete your blogs.
   It provides an easy-to-use interface for managing your blogs, utilizing pagination.
 
-![Dashboard page](media/images/readme_images/dashboard-view.jpeg)
+![Dashboard page](staticfiles/readme-images/dashboard-view.jpeg)
 
 ### Profile page
 
@@ -236,7 +236,7 @@ This project was created using the following languages and frameworks:
 
 - It provides a simple interface for managing your account details, ensuring your profile stays up-to-date.
 
-![Profile page](media/images/readme_images/profile-view.jpeg)
+![Profile page](staticfiles/readme-images/profile-view.jpeg)
 
 ### Login page
 
@@ -244,7 +244,7 @@ This project was created using the following languages and frameworks:
 
 - It has a form with the username and password fields.
 
-![Login page](/media/images/readme_images/login-image.jpeg)
+![Login page](staticfiles/readme-images/login-image.jpeg)
 
 ### Register page
 
@@ -252,13 +252,13 @@ This project was created using the following languages and frameworks:
 
 - It has a form with the first name, last name, username, email, password and confirm password.
 
-![register page](/media/images/readme_images/register-image.jpeg)
+![register page](staticfiles/readme-images/register-image.jpeg)
 
 ### Delete blog confirmation page
 
 - Delete blog confirmation page is where the user can confirm if they want to delete the blog.
 
-![delete blog confirmation page](/media/images/readme_images/delete-img.jpeg)
+![delete blog confirmation page](staticfiles/readme-images/delete-img.jpeg)
 
 ### Add blog page
 
@@ -266,7 +266,7 @@ This project was created using the following languages and frameworks:
 
 - It has form with title, description, image and category fields.
 
-![Add blog page](/media/images/readme_images/addblog-img.jpeg)
+![Add blog page](staticfiles/readme-images/addblog-img.jpeg)
 
 ## Features to be implemented in future
 
@@ -286,54 +286,54 @@ This project was created using the following languages and frameworks:
 
 | Page          | Validation image                                                                |
 | ------------- | ------------------------------------------------------------------------------- |
-| Home page     | ![Homepage-validation](media/images/readme_images/Homepage-html-validation.png) |
-| About page    | ![About-validation](media/images/readme_images/aboutpage-html-validation.png)   |
-| Contact page  | ![Contact-validation](media/images/readme_images/contactpage-validation.png)    |
-| Register page | ![Register-validation](media/images/readme_images/registerpage-validation.png)  |
-| Login page    | ![Login-validation](media/images/readme_images/loginpage-validation.png)        |
-| Dasboard page | ![Dashboard-validation](media/images/readme_images/dashboard-validation.png)    |
+| Home page     | ![Homepage-validation](staticfiles/readme-images/Homepage-html-validation.png) |
+| About page    | ![About-validation](staticfiles/readme-images/aboutpage-html-validation.png)   |
+| Contact page  | ![Contact-validation](staticfiles/readme-images/contactpage-validation.png)    |
+| Register page | ![Register-validation](staticfiles/readme-images/registerpage-validation.png)  |
+| Login page    | ![Login-validation](staticfiles/readme-images/loginpage-validation.png)        |
+| Dasboard page | ![Dashboard-validation](staticfiles/readme-images/dashboard-validation.png)    |
 
 ### CSS Validation
 
 - No errors were found when passing the through the official [jigsaw](https://jigsaw.w3.org/css-validator/) validator.
 
-![CSS validation](media/images/readme_images/css-validation-image.png)
+![CSS validation](staticfiles/readme-images/css-validation-image.png)
 
 ### Lighthouse Validation
 
 - Home page lighthouse validation.
 
-![Home page lighthouse validation](media/images/readme_images/homepage-LH-view.png)
+![Home page lighthouse validation](staticfiles/readme-images/homepage-LH-view.png)
 
 - About page lighthouse validation.
 
-![About page lighthouse validation](media/images/readme_images/aboutpage-LH-view.png)
+![About page lighthouse validation](staticfiles/readme-images/aboutpage-LH-view.png)
 
 - Contact page lighthouse validation.
 
-![Contact page lighthouse validation](media/images/readme_images/contactpage-LH-view.png)
+![Contact page lighthouse validation](staticfiles/readme-images/contactpage-LH-view.png)
 
 - Dashboard lighthouse validation.
 
-![Dashboard lighthouse validation](media/images/readme_images/dashboard-LH-view.png)
+![Dashboard lighthouse validation](staticfiles/readme-images/dashboard-LH-view.png)
 
 - Profile page lighthouse validation.
 
-  ![Profile page lighthouse validation](media/images/readme_images/profilepage-LH-view.png)
+  ![Profile page lighthouse validation](staticfiles/readme-images/profilepage-LH-view.png)
 
 - Register page lighthouse validation.
 
-![Register page lighthouse validation](media/images/readme_images/registerpage-LH-view.png)
+![Register page lighthouse validation](staticfiles/readme-images/registerpage-LH-view.png)
 
 - login page lighthouse validation.
 
-![login page lighthouse validation](media/images/readme_images/loginpage-LH-view.png)
+![login page lighthouse validation](staticfiles/readme-images/loginpage-LH-view.png)
 
 ### JavaScript Validation
 
 - No errors were found when passing code through official [JSHint](https://jshint.com/) validator.
 
-![JavaScript validation](media/images/readme_images/JS-validator-image.png)
+![JavaScript validation](staticfiles/readme-images/JS-validator-image.png)
 
 ### PEP8 Code Institute Python Linter Validation
 
@@ -343,7 +343,7 @@ This project was created using the following languages and frameworks:
 
 | File        | Result                                                          |
 | ----------- | --------------------------------------------------------------- |
-| settings.py | ![PEP8 Linter](media/images/readme_images/PEP8-linter-test.png) |
+| settings.py | ![PEP8 Linter](staticfiles/readme-images/PEP8-linter-test.png) |
 | urls.py     | All clear, no errors found                                      |
 
 #### Blog app
