@@ -15,7 +15,7 @@ def registerView(request):
         if form.is_valid():
             form.save()
             # Take the user to home page
-            return redirect('home')
+            return redirect('login')
 
     context = {
         'form': form
